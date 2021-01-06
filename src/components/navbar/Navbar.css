@@ -1,0 +1,26 @@
+#video-call-navbar {
+    height: 64px;
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-icons {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 64px;
+}
+
+.header-icons > svg {
+    margin-left: 20px;
+    width: 28px !important;
+    height: 30px !important;
+}
+
+.header-icons > svg:first-child {
+    margin-left: 0;
+}

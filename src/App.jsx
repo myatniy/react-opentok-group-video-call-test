@@ -1,5 +1,6 @@
 import React from 'react';
 import {OTSession, OTPublisher, OTStreams, OTSubscriber} from 'opentok-react';
+import Navbar from "./components/navbar";
 
 export default class App extends React.Component {
     constructor(props) {
@@ -86,6 +87,8 @@ export default class App extends React.Component {
                 {/*        <strong>Error:</strong> {error}*/}
                 {/*    </div>*/}
                 {/*) : null}*/}
+                <Navbar />
+
                 <OTSession
                     apiKey={apiKey}
                     sessionId={sessionId}
