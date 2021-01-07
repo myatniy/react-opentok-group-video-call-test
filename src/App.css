@@ -1,0 +1,21 @@
+#video-chat-app-container {
+    display: flex;
+    flex-flow: column;
+}
+
+#group-call-container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+#group-call-container > div {
+    width: 50%;
+    flex: 1 1 auto;
+}
+
+.OTPublisherContainer,
+.OTSubscriberContainer {
+    width: auto !important;
+    height: 100% !important;
+}
