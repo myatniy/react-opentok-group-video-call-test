@@ -1,17 +1,25 @@
 #video-chat-app-container {
     display: flex;
     flex-flow: column;
+    /* Webkit */
+    display: -webkit-flex;
+    -webkit-flex-flow: column;
 }
 
 #group-call-container {
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
-    width: 100%;
+    /* Webkit */
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
 }
 
 #group-call-container > div {
     width: 50%;
     flex: 1 1 auto;
+    /* Webkit */
+    -webkit-flex: 1 1 auto;
 }
 
 .OTPublisherContainer,

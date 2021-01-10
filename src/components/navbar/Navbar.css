@@ -6,13 +6,22 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+    /* webkit */
+    display: -webkit-flex;
+    -webkit-flex-flow: row nowrap;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
 }
 
 .header-icons {
+    height: 64px;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    height: 64px;
+    /* webkit */
+    display: -webkit-flex;
+    -webkit-flex-flow: row nowrap;
+    -webkit-align-items: center;
 }
 
 .header-icons > img {
