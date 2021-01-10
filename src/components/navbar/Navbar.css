@@ -1,7 +1,7 @@
 #video-call-navbar {
     height: 64px;
     width: 100%;
-    padding: 0 10px;
+    padding: 0 16px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -15,12 +15,11 @@
     height: 64px;
 }
 
-.header-icons > svg {
-    margin-left: 20px;
-    width: 28px !important;
-    height: 30px !important;
+.header-icons > img {
+    margin-left: 24px;
+    width: 24px;
 }
 
-.header-icons > svg:first-child {
+.header-icons > img:first-child {
     margin-left: 0;
 }

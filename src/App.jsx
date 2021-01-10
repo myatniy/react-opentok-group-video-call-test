@@ -36,6 +36,10 @@ export default class App extends React.Component {
         setHeightGroupCallContainer();
     }
 
+    // componentDidUpdate(prevProps, prevState, snapshot) {
+    //     setHeightGroupCallContainer();
+    // }
+
     render() {
         return (
             <div id="video-chat-app-container">

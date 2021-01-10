@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendar, faEnvelope, faBars } from "@fortawesome/free-solid-svg-icons";
-
 import "./Navbar.css"
+import CalendarSVG from "../../svg/Calendar.svg";
+import MessagesSVG from "../../svg/Messages.svg";
+import MenuSVG from "../../svg/Menu.svg";
 
 const Navbar = () => (
     <nav id="video-call-navbar">
@@ -12,9 +12,9 @@ const Navbar = () => (
         </header>
 
         <div className="header-icons">
-            <FontAwesomeIcon icon={faCalendar}/>
-            <FontAwesomeIcon icon={faEnvelope}/>
-            <FontAwesomeIcon icon={faBars}/>
+            <img src={CalendarSVG} alt="calendar" />
+            <img src={MessagesSVG} alt="messages" />
+            <img src={MenuSVG} alt="menu" />
         </div>
     </nav>
 );
