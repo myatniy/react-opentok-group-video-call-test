@@ -27,3 +27,7 @@
     width: auto !important;
     height: 100% !important;
 }
+
+.OT_edge-bar-item {
+    display: none !important;
+}
