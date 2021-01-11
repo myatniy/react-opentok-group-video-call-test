@@ -1,6 +1,9 @@
 {
-  "main.css": "static/css/main.fa1268f0.css",
-  "main.css.map": "static/css/main.fa1268f0.css.map",
-  "main.js": "static/js/main.c89e053f.js",
-  "main.js.map": "static/js/main.c89e053f.js.map"
+  "main.css": "static/css/main.b6a7f5eb.css",
+  "main.css.map": "static/css/main.b6a7f5eb.css.map",
+  "main.js": "static/js/main.7bbc2157.js",
+  "main.js.map": "static/js/main.7bbc2157.js.map",
+  "static\\media\\Calendar.svg": "static/media/Calendar.f8ff4489.svg",
+  "static\\media\\Menu.svg": "static/media/Menu.adbcec14.svg",
+  "static\\media\\Messages.svg": "static/media/Messages.c60800dd.svg"
 }
