@@ -28,6 +28,26 @@
     height: 100% !important;
 }
 
-.OT_edge-bar-item {
+/*.OT_edge-bar-item {*/
+/*    display: none !important;*/
+/*}*/
+
+.OT_bar,
+.OT_edge-bar-item,
+.OT_mode-auto,
+.OT_name,
+.OT_edge-bar-item,
+.OT_mode-off,
+.OT_archiving,
+.OT_edge-bar-item,
+.OT_edge-bottom,
+.OT_archiving-off,
+.OT_mode-off,
+.OT_edge-bar-item,
+.OT_mute,
+.OT_mode-auto,
+.OT_active,
+.OT_audio-level-meter,
+.OT_hide-forced {
     display: none !important;
 }
