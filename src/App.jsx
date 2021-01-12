@@ -1,7 +1,7 @@
 import React from 'react';
 import {OTPublisher, createSession, OTSubscriber} from 'opentok-react';
 import Navbar from "./components/navbar";
-import { API_KEY, SESSION_ID, TOKEN } from "./config";
+import {API_KEY, SESSION_ID, TOKEN} from "./config";
 
 import "./App.css";
 
@@ -16,7 +16,16 @@ function setHeightGroupCallContainer() {
 export default class App extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { streams: [] };
+
+        this.state = {streams: []};
+
+        this.publisherProperties = {
+            showControls: false
+        };
+
+        this.subscriberProperties = {
+            showControls: false
+        };
     }
 
     componentWillMount() {
@@ -24,7 +33,9 @@ export default class App extends React.Component {
             apiKey: API_KEY,
             sessionId: SESSION_ID,
             token: TOKEN,
-            onStreamsUpdated: streams => { this.setState({ streams }); }
+            onStreamsUpdated: streams => {
+                this.setState({streams});
+            }
         });
     }
 
@@ -39,9 +50,12 @@ export default class App extends React.Component {
     render() {
         return (
             <div id="video-chat-app-container">
-                <Navbar />
+                <Navbar/>
                 <section id="group-call-container">
-                    <OTPublisher session={this.sessionHelper.session} />
+                    <OTPublisher
+                        session={this.sessionHelper.session}
+                        properties={this.publisherProperties}
+                    />
 
                     {this.state.streams.map(stream => {
                         return (
@@ -49,6 +63,7 @@ export default class App extends React.Component {
                                 key={stream.id}
                                 session={this.sessionHelper.session}
                                 stream={stream}
+                                properties={this.subscriberProperties}
                             />
                         );
                     })}
